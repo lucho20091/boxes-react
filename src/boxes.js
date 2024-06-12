@@ -1,7 +1,7 @@
 const boxes = [
     {
         id: 1,
-        on: true
+        on: false
     },   
     {
         id: 2,
@@ -9,11 +9,11 @@ const boxes = [
     },   
     {
         id: 3,
-        on: true
+        on: false
     },   
     {
         id: 4,
-        on: true
+        on: false
     },   
     {
         id: 5,

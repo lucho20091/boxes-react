@@ -1,9 +1,10 @@
 import React from "react"
 
 export default function Box(props) {
-    // console.log(props)
+    console.log("this is props from box.js", props)    
     const styles = {
-        backgroundColor: props.on ? "#222222" : "transparent"
+        backgroundColor: props.on ? "#222222" : "transparent",
+        color: props.on ? "#FFFFFF" : "black"
     }
     
     return (
@@ -12,6 +13,8 @@ export default function Box(props) {
             className="box"
             onClick={()=>props.toggle(props.id)}
         >
+            <p>id: {props.id}</p>
+            <p>on: {JSON.stringify(props.on)}</p>
         </div>
     )
 }
